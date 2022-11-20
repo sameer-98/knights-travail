@@ -38,7 +38,6 @@ function knightMoves (start, end){
             return distance;
         }
         visited.add(node.getPositionString());
-        //console.log(visited)
 
         // Add neighbors
         for (const neighbor of getNeighbors(row, col)){
