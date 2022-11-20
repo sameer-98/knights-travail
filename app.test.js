@@ -1,3 +1,8 @@
-test('Create a knight object having x and y coordinate', () => {
-    expect(createKnight(2,2)).toEqual({x: 2, y: 2});
-})
+const knightMoves = require('./app')
+
+test('minimum no of moves', () => {
+    expect(knightMoves([0,0],[1,2])).toEqual(1)
+});
+test('minimum no of moves', () => {
+    expect(knightMoves([0,0],[3,3])).toEqual(2)
+});
